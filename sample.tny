@@ -1,0 +1,27 @@
+read x;
+if 0 < x then
+	fcct := 1;
+	do
+		fact := fact * x;
+		x := x - 1;
+	while 0 < x
+endif
+write fact;
+
+read x;
+if 0 < x then
+	for fact := x downto 1 do
+		fact := fact * x;
+	enddo
+endif
+write fact;
+
+read x;
+if 0 < x then
+	fact := 1;
+	while 0 < x do
+		fact := fact * x;
+		x := x - 1;
+	endwhile
+endif
+write fact;
