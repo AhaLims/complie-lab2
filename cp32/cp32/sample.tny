@@ -1,0 +1,9 @@
+read x
+if 0 < x then
+	fcct := 1
+	do
+		fact := fact * x
+		x := x - 1
+	while 0 < x
+endif
+write fact
